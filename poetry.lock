@@ -1,0 +1,69 @@
+[[package]]
+category = "main"
+description = "http GET dict"
+name = "get"
+optional = false
+python-versions = "*"
+version = "2019.4.13"
+
+[package.dependencies]
+query_string = "*"
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "http POST dict"
+name = "post"
+optional = false
+python-versions = "*"
+version = "2019.4.13"
+
+[package.dependencies]
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "replace '__all__' with '@public.add' decorator"
+name = "public"
+optional = false
+python-versions = "*"
+version = "2019.4.13"
+
+[package.dependencies]
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "get url query string dict"
+name = "query-string"
+optional = false
+python-versions = "*"
+version = "2019.4.13"
+
+[package.dependencies]
+public = "*"
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "http REQUEST (GET+POST) dict"
+name = "request"
+optional = false
+python-versions = "*"
+version = "2019.4.13"
+
+[package.dependencies]
+get = "*"
+post = "*"
+setuptools = "*"
+
+[metadata]
+content-hash = "2875cc3a9cc56f811208cb6554574ed5fde6c134310817d7f5ef373fa9718132"
+python-versions = "^3.7"
+
+[metadata.hashes]
+get = ["688268840f923255932154a52bdd40ffac467de4126835c43846e9e6f112844c"]
+post = ["8fd57fb16f2c90ef4a76b04b8701c4db8ded170e53fac9514b5ea0272da5d36f"]
+public = ["e1436a8a99693a9849dfe40b9158f3837b7c309c163b2d3f5b8e9fce23876db1"]
+query-string = ["bb24e4f58849ef6f8219b2446c2bed076d86c97720ae9c3ae918625807394ca8"]
+request = ["6297b53c29a4928f7735034df2ab60aa1c7c044df989f605a81b7dc2d3713732"]
