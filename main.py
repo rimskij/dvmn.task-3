@@ -32,22 +32,13 @@ def count_clicks(BITLY_TOKEN, LONG_URL):
   bitly_response = response.json()
   return bitly_response['total_clicks']
 
- #def createParser():
- #   parser = argparse.ArgumentParser(description='вывод короткой ссылки')
- #   args = parser.parse_args()
- #   parser.add_argument('long_url', help='сайт')
-
-    #return parser
-  
+   
 if __name__ == '__main__':
 
-   parser = argparse.ArgumentParser(
-    description='Описание что делает программа'
-   )
-   parser.add_argument('url', help='Ваше имя')
+   parser = argparse.ArgumentParser()
+   parser.add_argument('url')
    args = parser.parse_args()
-   #print(args.name)
-   #long_url = input('Input url: ')
+  
    try:
     print('Короткая ссылка: ', shorten_link(BITLY_TOKEN , args.url))
    except requests.exceptions.HTTPError:
